@@ -3,7 +3,7 @@
     ```bash
     pip install tiktoken
     ```
-* Open the file `02-github-codespaces/tokens.py`
+* In `02-github-codespaces` create a new file called `tokens.py`
 * Import the `tiktoken` module
     ```python
     import tiktoken
@@ -27,7 +27,12 @@
     ```python
     print(tokens)
     ```
-*  Click the *Run* button in the upper right corner of the editor.
+*  Open the terminal panel
+*  Change to the `02-github-codespace` folder
+*  Run the file
+    ```bash
+    python tokens.py
+    ```
 *  Notice that the tokens are a list of numbers.
 *  You can also convert the tokens back into words.
     ```python
@@ -50,4 +55,3 @@
     print(f"Ratio of words to tokens: {no_words / len(tokens)}")
     ```
 * Run the file again.
-* Go to [Exercise 02-02](https://github.com)
