@@ -1,0 +1,17 @@
+###
+GET http://localhost:11434/api/tags
+
+###
+POST http://localhost:11434/api/chat
+Content-Type: application/json
+
+{
+    "model": "llama3.2:1b",
+    "messages": [
+        {
+            "role": "user",
+            "content": "What benefits does retrieval augmented generation offer AI apps?"
+        }
+    ],
+    "stream": false
+}
