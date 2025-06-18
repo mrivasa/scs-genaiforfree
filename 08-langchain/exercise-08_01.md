@@ -61,3 +61,19 @@
     ```python
     print(response)
     ```
+* Install the `langchain-openai` package
+    ```bash
+    pip install langchain-openai
+    ```
+* Import the `ChatOpenAI` type from the `langchain_openai` module
+    ```python
+    from langchain_openai import ChatOpenAI
+    ```
+* Replace the `ChatGroq` `llm` with a `ChatOpenAI` instance using the base URL, API key, and model from `03-github-models`
+    ```python
+    llm = ChatOpenAI(
+        openai_api_key=os.getenv("GH_MODELS_TOKEN"),
+        openai_api_base="https://models.github.ai/inference",
+        model_name="openai/gpt-4.1-mini"
+    )
+    ```
