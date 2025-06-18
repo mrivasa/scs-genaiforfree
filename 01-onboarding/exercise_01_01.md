@@ -26,4 +26,3 @@
 * Scroll to **Default idle timeout**
 * Enter a value from 5 minutes - 240 minutes (4 hours)
   * I recommend 10 minutes but for today 20 will be good
-* Proceed to [Exercise 02-01](https://github.com/)
