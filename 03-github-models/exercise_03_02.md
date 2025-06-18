@@ -33,4 +33,3 @@
     ```python
     print(token[-4:])
     ```
-* Go to [Exercise 03-03](https://github.com)
