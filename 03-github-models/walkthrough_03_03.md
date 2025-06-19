@@ -43,7 +43,7 @@
     response = client.chat.completions.create(
         messages=[system_message, user_message],
         temperature=0.3,
-        top_p=0.7
+        top_p=0.7,
         model="openai/gpt-4.1-mini"
     )
     ```
