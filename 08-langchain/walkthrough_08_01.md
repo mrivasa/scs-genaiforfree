@@ -17,11 +17,11 @@
     ```
 * And you'll need the `StrOutputParser` from the `langchain_core.output_parsers` module
     ```python
-    from langchain_core.output_parsers import StrOutParser
+    from langchain_core.output_parsers import StrOutputParser
     ```
 * Use the `from_template` function to generate a prompt from a template.  Notice that the template has a variable for a topic.  It also specifies the format of the response.
     ```python
-    PromptTemplate.from_template(
+    prompt = PromptTemplate.from_template(
         """
         List three pros and cons of the following topic:
 
@@ -40,7 +40,7 @@
 * The `ChatGroq` class will accept the name of the Groq model to use to generate the response and the `GROQ_API_KEY` secret.  Also, set the temperature to 0.  This is a good practice for structured outputs.
     ```python
     llm = ChatGroq(
-        model="llama-3.3b-70b-versatile",
+        model="llama-3.3-70b-versatile",
         api_key=os.getenv("GROQ_API_KEY"),
         temperature=0
     )
